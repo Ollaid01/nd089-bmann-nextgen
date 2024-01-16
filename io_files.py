@@ -25,5 +25,12 @@ pyfile.close()
 # Using auto-close files
 with open('./tuples.py', 'r') as myFile:
     file_data = myFile.read()
-print(file_data)
+# print(file_data)
 
+# Calling the read Method with an Integer
+with open('./camelot.txt') as song:
+    print(song.read(11))
+    print(song.read())
+
+# Calling the read Method with an Integer
+    
