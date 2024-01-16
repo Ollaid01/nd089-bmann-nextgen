@@ -14,3 +14,11 @@ pyfile = open('./tuples.py', 'r')
 file_data = pyfile.read()
 pyfile.close()
 print(file_data)
+
+
+# Writing Files
+pyfile = open('./tuples.py', 'w')
+pyfile.write("Wrrrrrite  Hello There !")
+pyfile.close()
+print(file_data)
+
