@@ -37,11 +37,22 @@
 
 
 # Catch Error using try/expect bloc 
-while True:
-    try:
-        x = int(input("Enter a number : "))
-        break
-    except (KeyboardInterrupt, ValueError):
-        print("That\'s not a valid number !")
-    finally:
-        print("\n Attempted inputs. \n")
+# while True:
+#     try:
+#         x = int(input("Enter a number : "))
+#         break
+#     except (KeyboardInterrupt, ValueError):
+#         print("That\'s not a valid number !")
+#     finally:
+#         print("\n Attempted inputs. \n")
+
+# Print Error Message
+
+try:
+    x = 4/0
+except ValueError:
+    print("\n That\'s not a number ! \n")
+except ZeroDivisionError as e:
+    print("\n Error occurs is : {} !".format(e))
+finally:
+    print("\n Attempted inputs. \n")
